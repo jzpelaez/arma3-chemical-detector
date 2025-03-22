@@ -9,7 +9,7 @@ private _ctrl = _ui displayCtrl 101;
 
 _maxDistance = _maxDistance - _minDistance;
 
-while _condition do {
+while {_condition} do {
 	private _distance = ((player distance _object) - _minDistance) max 0;
 
 	private _threat = ((1 - (_distance/_maxDistance)) max 0) min 1;
